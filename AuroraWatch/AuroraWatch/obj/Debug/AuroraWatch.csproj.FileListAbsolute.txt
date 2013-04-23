@@ -1,0 +1,16 @@
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\Bin\Debug\ApplicationIcon.png
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\Bin\Debug\Background.png
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\Bin\Debug\AuroraWatch.dll
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\Bin\Debug\AuroraWatch.pdb
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\Bin\Debug\AppManifest.xaml
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\Bin\Debug\AuroraWatch.xap
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\obj\Debug\ResolveAssemblyReference.cache
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\obj\Debug\App.g.i.cs
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\obj\Debug\MainPage.g.i.cs
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\obj\Debug\AuroraWatch.g.resources
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\obj\Debug\AuroraWatch.dll
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\obj\Debug\AuroraWatch.pdb
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\obj\Debug\XapCacheFile.xml
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\Bin\Debug\Microsoft.Phone.Controls.dll
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\Bin\Debug\Microsoft.Phone.Controls.xml
+D:\Programming\AuroraWatch\AuroraWatch\AuroraWatch\obj\Debug\PivotPage.g.i.cs

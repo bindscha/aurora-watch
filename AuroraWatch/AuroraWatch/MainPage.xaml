@@ -1,0 +1,188 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="AuroraWatch.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="/AuroraWatch;component/Images/aurora_background1.jpg" />
+        </Grid.Background>
+        <!--Pivot Control-->
+        <controls:Pivot x:Name="Pivot"  Title="Aurora Watch">
+            <!--Pivot item one-->
+            <controls:PivotItem Header="Europe">
+                <Grid x:Name="EuropeRoot">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Aurora;component/Images/aurora_background.jpg" Stretch="UniformToFill" />
+                    </Grid.Background>
+
+                    <!--TitlePanel contains the name of the application and page title-->
+                    <StackPanel x:Name="EuropeTitlePanel" Grid.Row="0" Margin="5,5,5,30" Background="SpringGreen">
+                        <TextBlock x:Name="EuropePageTitle" Text="LOW" Margin="0" Style="{StaticResource PhoneTextTitle1Style}" TextAlignment="Center" FontSize="48" Foreground="Black" FontFamily="Calibri" />
+                    </StackPanel>
+
+                    <!--ContentPanel - place additional content here-->
+                    <Grid x:Name="EuropeContentPanel" Grid.Row="1" Margin="10,0,10,0" ShowGridLines="False">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.67*"/>
+                            <RowDefinition Height="0.33*"/>
+                        </Grid.RowDefinitions>
+                        <Image x:Name="EuropeImage" Source="http://www.gi.alaska.edu/sites/www.gi.alaska.edu/modules/local/auroraforecast/images/Europe_3.png" Grid.Row="0">
+                        </Image>
+                        <TextBlock x:Name="EuropeTextBlock" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Text="{Binding InfoText}" />
+                    </Grid>
+                </Grid>
+            </controls:PivotItem>
+
+            <!--Pivot item two-->
+            <controls:PivotItem Header="America">
+                <Grid x:Name="AmericaRoot">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Aurora;component/Images/aurora_background.jpg" Stretch="UniformToFill" />
+                    </Grid.Background>
+
+                    <!--TitlePanel contains the name of the application and page title-->
+                    <StackPanel x:Name="AmericaTitlePanel" Grid.Row="0" Margin="5,5,5,30" Background="SpringGreen">
+                        <TextBlock x:Name="AmericaPageTitle" Text="LOW" Margin="0" Style="{StaticResource PhoneTextTitle1Style}" TextAlignment="Center" FontSize="48" Foreground="Black" FontFamily="Calibri" />
+                    </StackPanel>
+
+                    <!--ContentPanel - place additional content here-->
+                    <Grid x:Name="AmericaContentPanel" Grid.Row="1" Margin="10,0,10,0" ShowGridLines="False">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.67*"/>
+                            <RowDefinition Height="0.33*"/>
+                        </Grid.RowDefinitions>
+                        <Image x:Name="AmericaImage" Source="http://www.gi.alaska.edu/sites/www.gi.alaska.edu/modules/local/auroraforecast/images/NorthAmerica_3.png" Grid.Row="0">
+                        </Image>
+                        <TextBlock x:Name="AmericaTextBlock1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Text="{Binding InfoText}" />
+                    </Grid>
+                </Grid>
+            </controls:PivotItem>
+
+            <!--Pivot item three-->
+            <controls:PivotItem Header="Alaska">
+                <Grid x:Name="AlaskaRoot">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Aurora;component/Images/aurora_background.jpg" Stretch="UniformToFill" />
+                    </Grid.Background>
+
+                    <!--TitlePanel contains the name of the application and page title-->
+                    <StackPanel x:Name="AlaskaTitlePanel" Grid.Row="0" Margin="5,5,5,30" Background="SpringGreen">
+                        <TextBlock x:Name="AlaskaPageTitle" Text="LOW" Margin="0" Style="{StaticResource PhoneTextTitle1Style}" TextAlignment="Center" FontSize="48" Foreground="Black" FontFamily="Calibri" />
+                    </StackPanel>
+
+                    <!--ContentPanel - place additional content here-->
+                    <Grid x:Name="AlaskaContentPanel" Grid.Row="1" Margin="10,0,10,0" ShowGridLines="False">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.67*"/>
+                            <RowDefinition Height="0.33*"/>
+                        </Grid.RowDefinitions>
+                        <Image x:Name="AlaskaImage" Source="http://www.gi.alaska.edu/sites/www.gi.alaska.edu/modules/local/auroraforecast/images/Alaska_3.png" Grid.Row="0">
+                        </Image>
+                        <TextBlock x:Name="AlaksaTextBlock1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Text="TextBlock" />
+                    </Grid>
+                </Grid>
+            </controls:PivotItem>
+
+            <!--Pivot item four-->
+            <controls:PivotItem Header="NorthPole">
+                <Grid x:Name="NorthPoleRoot">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Aurora;component/Images/aurora_background.jpg" Stretch="UniformToFill" />
+                    </Grid.Background>
+
+                    <!--TitlePanel contains the name of the application and page title-->
+                    <StackPanel x:Name="NorthPoleTitlePanel" Grid.Row="0" Margin="5,5,5,30" Background="SpringGreen">
+                        <TextBlock x:Name="NorthPolePageTitle" Text="LOW" Margin="0" Style="{StaticResource PhoneTextTitle1Style}" TextAlignment="Center" FontSize="48" Foreground="Black" FontFamily="Calibri" />
+                    </StackPanel>
+
+                    <!--ContentPanel - place additional content here-->
+                    <Grid x:Name="NorthPoleContentPanel" Grid.Row="1" Margin="10,0,10,0" ShowGridLines="False">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.67*"/>
+                            <RowDefinition Height="0.33*"/>
+                        </Grid.RowDefinitions>
+                        <Image x:Name="NorthPoleImage" Source="{Binding NorthPoleMap}" Grid.Row="0">
+                        </Image>
+                        <TextBlock x:Name="NorthPoleTextBlock1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Text="TextBlock" />
+                    </Grid>
+                </Grid>
+            </controls:PivotItem>
+            
+            <!--Pivot item five-->
+            <controls:PivotItem Header="SouthPole">
+                <Grid x:Name="SouthPoleRoot">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Aurora;component/Images/aurora_background.jpg" Stretch="UniformToFill" />
+                    </Grid.Background>
+
+                    <!--TitlePanel contains the name of the application and page title-->
+                    <StackPanel x:Name="SouthPoleTitlePanel" Grid.Row="0" Margin="5,5,5,30" Background="SpringGreen">
+                        <TextBlock x:Name="SouthPolePageTitle" Text="LOW" Margin="0" Style="{StaticResource PhoneTextTitle1Style}" TextAlignment="Center" FontSize="48" Foreground="Black" FontFamily="Calibri" />
+                    </StackPanel>
+
+                    <!--ContentPanel - place additional content here-->
+                    <Grid x:Name="SouthPoleContentPanel" Grid.Row="1" Margin="10,0,10,0" ShowGridLines="False">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.67*"/>
+                            <RowDefinition Height="0.33*"/>
+                        </Grid.RowDefinitions>
+                        <Image x:Name="SouthPoleImage" Source="{Binding SouthPoleMap}" Grid.Row="0">
+                        </Image>
+                        <TextBlock x:Name="SouthPoleTextBlock1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Text="TextBlock" />
+                    </Grid>
+                </Grid>
+            </controls:PivotItem>
+        </controls:Pivot>
+    </Grid>
+    
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="appbar_button1" IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton x:Name="appbar_button2" IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem x:Name="menuItem1" Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem x:Name="menuItem2" Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>
